@@ -1,0 +1,52 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar-header{
+    background-color: thistle;
+}
+
+.sidebar-header img{
+    width: 20%;
+    border-radius: 25px;
+}
+
+#sidebar-left{
+    border: 1px solid black;
+    height: 800px;
+}
+
+#sidebar-right{
+    border: 1px solid black;
+    height: 800px;
+}
+
+#popup-notifica{
+    background-color: lightskyblue;
+}
+
+#popup-notifica i{
+    color: white;
+}
+
+#popup-notifica span{
+    font-size: 0.9em;
+}
+
+#popup-notifica p{
+    font-size: 0.7em;
+    color: grey;
+}
+
+#searchbar{
+    background-color: rgb(255, 255, 239);
+}
+
+#input-search-bar{
+    width: 100%;
+}
+
+
