@@ -5,8 +5,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(179, 179, 179);
+}
+
 .sidebar-header{
-    background-color: thistle;
+    background-color: whitesmoke;
 }
 
 .sidebar-header img{
@@ -14,14 +18,23 @@
     border-radius: 25px;
 }
 
+#green-line-background{
+    height: 150px;
+    background-color: green;
+    position: absolute;
+    
+}
+
 #sidebar-left{
-    border: 1px solid black;
     height: 800px;
+    background-color: white;
 }
 
 #sidebar-right{
-    border: 1px solid black;
     height: 800px;
+    background-image: url(../img/mine.jpg);
+    background-repeat: inherit;
+    position: relative;
 }
 
 #popup-notifica{
@@ -47,6 +60,11 @@
 
 #input-search-bar{
     width: 100%;
+}
+
+#footer-sidebar-left{
+    position: absolute;
+    bottom: 0;
 }
 
 
