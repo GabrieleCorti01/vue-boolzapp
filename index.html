@@ -58,7 +58,7 @@
 
                 <!-- Chat attive -->
                 <div class="row">
-                    <div @click="ClickvisualizzaChat()" class="col-12 p-2 ps-3 border-bottom" v-for="(element, index) in contacts" id="container-chat-attive">
+                    <div @click="clickChat()" class="col-12 p-2 ps-3 border-bottom" v-for="(element, index) in contacts" id="container-chat-attive">
                         <img :src="'img/avatar' + element.avatar + '.jpg' " :alt="element.name">
                         <span>{{ element.name }}</span>    
                     </div>
