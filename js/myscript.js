@@ -89,12 +89,16 @@ var app = new Vue(
                 },
             ],
             contactindex : 0,
-            methods: {
+
+        },
+        methods : {
                 
-                visualizzaChat: function(){
-                    
-                }
-                
+            ClickVisualizzaChat: function(){
+                this.visualizzaChat()
+            },
+
+            visualizzaChat: function(){
+                contactindex = 0
             }
         }
         
