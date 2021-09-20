@@ -88,8 +88,12 @@ var app = new Vue(
                     ],
                 },
             ],
+            contactindex : 0,
             methods: {
                 
+                visualizzaChat: function(){
+                    
+                }
                 
             }
         }
