@@ -90,6 +90,7 @@ var app = new Vue(
             ],
             contactindex : 0,
             inputTodo : "",
+            messaggino : "",
 
         },
         methods : {
@@ -98,13 +99,8 @@ var app = new Vue(
                 this.contactindex = index;
                 
             },
-
-            changeColor : function() {
-                document.body.style.backgroundcolor = "purple";
-                
-            },
             
-            addTodoElement: function(){
+            viewChat: function(){
                 if (this.inputTodo.trim().length > 0 ){
 
                     const elementToAdd = {
@@ -117,15 +113,13 @@ var app = new Vue(
                 }
             },
 
-            addRisposta : function(){
-                const elementToAdd = {
-                    date: '10/01/2020 15:50:00',
-                    text: "ok",
-                    status: 'sent',
-                }
-                this.contacts[this.contactindex].messages.push(elementToAdd);
-                this.inputTodo = "";
-            }
+            setShow() {
+                setTimeout(() => {
+                  messaggino : "Ciao ragazzi";
+                }, 2000);
+            },
+
+            
         }
         
 

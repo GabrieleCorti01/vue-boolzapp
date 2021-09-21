@@ -58,7 +58,7 @@
 
                 <!-- Chat attive -->
                 <div class="row">
-                    <div @click="clickChat(index)" onclick="changeColor()" class="col-12 p-2 ps-3 border-bottom" v-for="(element, index) in contacts" id="container-chat-attive">
+                    <div @click="clickChat(index)" class="col-12 p-2 ps-3 border-bottom" v-for="(element, index) in contacts" id="container-chat-attive">
                         <img :src="'img/avatar' + element.avatar + '.jpg' " :alt="element.name">
                         <span>{{ element.name }}</span>    
                     </div>
@@ -90,9 +90,12 @@
                             <span class="text-riga">{{ messaggio.text }}</span>
                         </div>
                     </div>
-                    <div @keyup.enter="addTodoElement, setTimeout(addRisposta, 3000)" id="messaggio-utente">
+                    <div @keyup.enter="viewChat" id="messaggio-utente">
                         <span></span>
                     </div>
+
+                    <div @click="setShow" v-if="messaggino">{{ messaggino }}</div>
+
                 </div>
                 
 
@@ -104,7 +107,7 @@
             <div class="row" id="footer-sidebar-right">
                 <div class="col-12 input-group mb-3 pt-1">
                     <button class="btn btn-outline pe-3" type="button" id="button-addon1"><i class="far fa-smile"></i></button>
-                    <input type="text" v-model="inputTodo" @keyup.enter="addTodoElement" @keyup.enter="setTimeout(addRisposta, 300)" class="form-control" placeholder="Scrivi un messaggio.." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <input type="text" v-model="inputTodo" @keyup.enter="viewChat" class="form-control" placeholder="Scrivi un messaggio.." aria-label="Example text with button addon" aria-describedby="button-addon1">
                     <button class="btn btn-outline ps-3" type="button" id="button-addon1"><i class="fas fa-microphone"></i></button>
                 </div>
 
