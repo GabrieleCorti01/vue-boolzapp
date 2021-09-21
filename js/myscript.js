@@ -97,6 +97,23 @@ var app = new Vue(
                 this.contactindex = index;
                 
             },
+
+            changeColor : function() {
+                document.body.style.backgroundcolor = "purple";
+                
+            },
+            
+            addToDoElement: function(){
+                if (this.inputTodo.trim().length > 0 ){
+
+                    const elementToAdd = {
+                        content : this.inputTodo,
+                        done: false,
+                    }
+                    this.messages.push(elementToAdd);
+                    this.inputTodo = "";
+                }
+            }
         }
         
 

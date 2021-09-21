@@ -23,6 +23,10 @@ body{
     border-radius: 25px;
 }
 
+.text-riga{
+    line-height: 40px;
+}
+
 #sidebar-left{
     height: 800px;
     background-color: white;
@@ -71,6 +75,7 @@ body{
 
 #main-container-seidebar-right{
     height: calc(100% - 70px - 45px);
+    flex-direction: column;
 }
 
 #container-chat-attive img {
@@ -89,9 +94,28 @@ body{
 
 }
 
+.message{
+    width: 100%;
+    vertical-align: middle;
+}
+
 .message-container{
-    background-color: lightpink;
-    height: 50px;
+    background-color: white;
+    height: 40px;
+    font-size: 0.8em;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 50%;
+}
+
+.message .sent{
+    align-self: flex-end;
+}
+
+
+.sent .message-container{
+    background-color: lightgreen;
+
 }
 
 
