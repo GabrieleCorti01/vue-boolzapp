@@ -89,13 +89,9 @@ body{
 
 }
 
-.message{
-    width: 100%;
+.message-container{
+    background-color: lightpink;
+    height: 50px;
 }
 
-.sent{
-    background-color: lightgreen;
-    justify-content: end;
-
-}
 

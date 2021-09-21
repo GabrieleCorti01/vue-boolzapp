@@ -86,7 +86,9 @@
                 <!-- Main container right sidebar -->
                 <div class="row" id="main-container-seidebar-right">
                     <div v-for="(messaggio, indice) in contacts[contactindex].messages" class="message col-12" :class="messaggio.status">
-                        <span>{{ messaggio.text }}</span>
+                        <div class="message-container">
+                            <span>{{ messaggio.text }}</span>
+                        </div>
                     </div>
                 </div>
                 
