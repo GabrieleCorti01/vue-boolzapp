@@ -89,6 +89,7 @@ var app = new Vue(
                 },
             ],
             contactindex : 0,
+            inputTodo : "",
 
         },
         methods : {
@@ -103,16 +104,27 @@ var app = new Vue(
                 
             },
             
-            addToDoElement: function(){
+            addTodoElement: function(){
                 if (this.inputTodo.trim().length > 0 ){
 
                     const elementToAdd = {
-                        content : this.inputTodo,
-                        done: false,
+                        date: '10/01/2020 15:50:00',
+                        text: this.inputTodo,
+                        status: 'sent',
                     }
-                    this.messages.push(elementToAdd);
+                    this.contacts[this.contactindex].messages.push(elementToAdd);
                     this.inputTodo = "";
                 }
+            },
+
+            addRisposta : function(){
+                const elementToAdd = {
+                    date: '10/01/2020 15:50:00',
+                    text: "ok",
+                    status: 'sent',
+                }
+                this.contacts[this.contactindex].messages.push(elementToAdd);
+                this.inputTodo = "";
             }
         }
         
