@@ -58,7 +58,7 @@
 
                 <!-- Chat attive -->
                 <div class="row">
-                    <div @click="clickChat(index)" class="col-12 p-2 ps-3 border-bottom" v-for="(element, index) in contacts" id="container-chat-attive">
+                    <div @click="clickChat(index)" class="col-12 p-2 ps-3 border-bottom" v-for="(element, index) in contacts" id="container-chat-attive" :class="(index == contactindex) ? 'active' : '' " >
                         <img :src="'img/avatar' + element.avatar + '.jpg' " :alt="element.name">
                         <span>{{ element.name }}</span>    
                     </div>
@@ -70,7 +70,7 @@
             <div class="col-7" id="sidebar-right">
 
                  <!-- Header sidebar-right -->
-                <div class="sidebar-header row p-2 justify-content-between">
+                <div class="sidebar-header row p-2 justify-content-between mb-2">
                     <div class="col-7" id="contenitore-immagine-header-dx" >
                         <img :src="'img/avatar' + contacts[contactindex].avatar + '.jpg' " :alt="contacts[contactindex].name">
                         <span>{{ contacts[contactindex].name }}</span> 

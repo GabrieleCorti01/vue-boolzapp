@@ -113,11 +113,15 @@ var app = new Vue(
                 }
             },
 
-            setShow() {
-                setTimeout(() => {
-                  messaggino : "Ciao ragazzi";
-                }, 2000);
+            selectedChat: function(){
+                this.contactindex=index
             },
+
+            // setShow() {
+            //     setTimeout(() => {
+            //       messaggino : "Ciao ragazzi";
+            //     }, 2000);
+            // },
 
             
         }

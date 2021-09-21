@@ -27,6 +27,30 @@ body{
     line-height: 40px;
 }
 
+.message{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.message-container{
+    background-color: white;
+    height: 40px;
+    font-size: 0.8em;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 50%;
+}
+
+.message.sent{
+    align-items: flex-end;
+}
+
+
+.sent .message-container{
+    background-color: lightgreen;
+
+}
+
 #sidebar-left{
     height: 800px;
     background-color: white;
@@ -74,7 +98,7 @@ body{
 }
 
 #main-container-seidebar-right{
-    height: calc(100% - 70px - 45px);
+    height: calc(100% - 78px - 45px);
     flex-direction: column;
 }
 
@@ -91,31 +115,13 @@ body{
 #right-side-main{
     height: 100%;
     background-color: brown;
-
 }
 
-.message{
-    width: 100%;
-    vertical-align: middle;
-}
-
-.message-container{
-    background-color: white;
-    height: 40px;
-    font-size: 0.8em;
-    border-radius: 10px;
-    padding-left: 10px;
-    width: 50%;
-}
-
-.message .sent{
-    align-self: flex-end;
+#container-chat-attive.active{
+    background-color: rgb(233, 233, 233);
+    font-size: 1.2em;
 }
 
 
-.sent .message-container{
-    background-color: lightgreen;
-
-}
 
 
