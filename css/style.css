@@ -89,4 +89,13 @@ body{
 
 }
 
+.message{
+    width: 100%;
+}
+
+.sent{
+    background-color: lightgreen;
+    justify-content: end;
+
+}
 

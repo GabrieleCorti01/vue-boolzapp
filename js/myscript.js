@@ -93,13 +93,10 @@ var app = new Vue(
         },
         methods : {
                 
-            ClickVisualizzaChat: function(){
-                this.visualizzaChat()
+            clickChat: function(index){
+                this.contactindex = index;
+                
             },
-
-            visualizzaChat: function(){
-                contactindex = 0
-            }
         }
         
 
