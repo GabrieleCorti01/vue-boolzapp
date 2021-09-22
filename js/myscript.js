@@ -110,6 +110,7 @@ var app = new Vue(
                     }
                     this.contacts[this.contactindex].messages.push(elementToAdd);
                     this.inputTodo = "";
+                    this.rispostaComputer()
                 }
                 
             },
@@ -119,7 +120,14 @@ var app = new Vue(
             },
 
             rispostaComputer : function(){
-                
+                setTimeout(()=>{
+                    const elementToAdd = {
+                        date: '10/01/2020 15:50:00',
+                        text: "Ok",
+                        status: 'received',
+                    }
+                    this.contacts[this.contactindex].messages.push(elementToAdd);
+                },3000)
             }
 
             

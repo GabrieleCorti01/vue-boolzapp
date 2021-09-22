@@ -30,6 +30,7 @@ body{
 .message{
     width: 100%;
     vertical-align: middle;
+    display: flex;
 }
 
 .message-container{
@@ -43,6 +44,7 @@ body{
 
 .message.sent{
     align-items: flex-end;
+    justify-content: end;
 }
 
 
