@@ -23,7 +23,7 @@
             <div class="col-5" id="sidebar-left">
     
         <!-- Header sidebar-left -->
-                <div class="sidebar-header row p-2 justify-content-between">
+                <div class="sidebar-header row p-2 justify-content-between align-items-center">
                     <div class="col-6">
                         <img src="img/avatar_1.jpg" alt="immagine-avatar-corrente">
                         <span class="fs-6 fw-bold">Nome Utente</span>
@@ -56,11 +56,12 @@
 
                 </div>
 
-                <!-- Chat attive -->
+        <!-- Chat attive -->
                 <div class="row">
                     <div @click="clickChat(index)" class="col-12 p-2 ps-3 border-bottom" v-for="(element, index) in contacts" id="container-chat-attive" :class="(index == contactindex) ? 'active' : '' " >
                         <img :src="'img/avatar' + element.avatar + '.jpg' " :alt="element.name">
-                        <span>{{ element.name }}</span>    
+                        <span>{{ element.name }} </span>
+                           
                     </div>
 
                 </div>
@@ -69,7 +70,7 @@
             
             <div class="col-7" id="sidebar-right">
 
-                 <!-- Header sidebar-right -->
+        <!-- Header sidebar-right -->
                 <div class="sidebar-header row p-2 justify-content-between mb-2">
                     <div class="col-7" id="contenitore-immagine-header-dx" >
                         <img :src="'img/avatar' + contacts[contactindex].avatar + '.jpg' " :alt="contacts[contactindex].name">
@@ -83,7 +84,7 @@
                     </div>
                 </div>
 
-                <!-- Main container right sidebar -->
+        <!-- Main container right sidebar -->
                 <div class="row" id="main-container-seidebar-right">
                     <div v-for="(messaggio, indice) in contacts[contactindex].messages" class="message col-12" :class="messaggio.status">
                         <div class="message-container mb-2">
@@ -98,12 +99,7 @@
 
                 </div>
                 
-
-
-
-            
-
-            <!-- Footer sidebar-right -->
+        <!-- Footer sidebar-right -->
             <div class="row" id="footer-sidebar-right">
                 <div class="col-12 input-group mb-3 pt-1">
                     <button class="btn btn-outline pe-3" type="button" id="button-addon1"><i class="far fa-smile"></i></button>

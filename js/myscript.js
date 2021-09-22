@@ -111,17 +111,16 @@ var app = new Vue(
                     this.contacts[this.contactindex].messages.push(elementToAdd);
                     this.inputTodo = "";
                 }
+                
             },
 
             selectedChat: function(){
                 this.contactindex=index
             },
 
-            // setShow() {
-            //     setTimeout(() => {
-            //       messaggino : "Ciao ragazzi";
-            //     }, 2000);
-            // },
+            rispostaComputer : function(){
+                
+            }
 
             
         }
